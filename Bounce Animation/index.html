@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise of Bounce Animation</title>
+    <style>
+        .circle{
+            background-color: blue;
+            height: 45px;
+            width: 45px;
+            border-radius: 56px;
+            position: absolute;
+            bottom: 0;
+            border: 2px solid black;
+            animation: animetX 2s linear infinite , animetY 2s ease-out infinite alternate;
+        }
+        .container{
+            position: relative;
+            height: 80vh;
+            width: 130vh;
+            background-color: red;
+        }
+
+        @keyframes animetX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+
+        @keyframes animetY {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 100%;
+            }  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+
+        </div>
+    </div>
+</body>
+</html>
