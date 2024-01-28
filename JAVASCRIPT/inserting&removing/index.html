@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting & Removing element</title>
+    <script src="script.js"></script>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box1" style="display: flex;">Hey, I am a box</div>
+        <div class="box" data-createdby="Aryan">Hey, I am a box</div>
+        <!--(data-) attribute for storing information by your choice 
+        and if you want to access the data by the (.dataset) -->
+        <script>
+            //Dynamically element create 
+            //if you want to create an element with javascript
+            let div = document.createElement("div");
+            div.innerHTML = "I have been inserted <b>by Aryan</b>"
+            div.setAttribute("class", "created");
+            document.querySelector(".container").append(div) //append mean into the container at the last
+            //prepend mean into the container but at top
+            // let div = document.createElement("div");
+            // div.innerHTML = "Hello I am Aryan kumar";
+            // div.setAttribute("style", "ME");
+            // document.querySelector(".container").before(div);
+
+            let cont = document.querySelector(".container");
+            cont.insertAdjacentHTML("afterend", "<b> I am under the water. Please help me her too much raining.....iiiiuuuoooo</b>")
+        </script>
+    </div>
+</body>
+
+</html>
