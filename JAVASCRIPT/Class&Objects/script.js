@@ -30,11 +30,11 @@ class Animal {
 }
 
 class Lion extends Animal {      //extend Animal mean all properties of Animal in class lion (Inheritance another name)
-    constructor(name){
+    constructor(name) {
         super(name) //super keyword use for invoke superclass constructor
         console.log("Object is created and he is a lion");
     }
-    eats(){         //Method Overriding 
+    eats() {         //Method Overriding 
         super.eats()
         console.log("Kha rha hu roar");
     }
@@ -45,3 +45,5 @@ console.log(a);
 
 let l = new Lion("Shera");;
 console.log(l);
+
+//if a class belongs to another class then you can check with use of :- instance of
