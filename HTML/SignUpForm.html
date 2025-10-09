@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign-Up Form</title>
+</head>
+
+<body>
+    <h2>ChiPi Technologies - Login/Sign-Up Form</h2>
+    <form>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="e.g., kavya@example.com" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password"
+            required><br><br>
+
+        <label for="selectrole">I am a:</label><br>
+        <input list="role" id="selectrole" name="selectrole" placeholder="--Select Role--" size="12" required><br><br>
+        <datalist id="role">
+            <option value="Software Engineer"></option>
+            <option value="Full-Stack Developer"></option>
+            <option value="AI/ML Engineer"></option>
+            <option value="Data Analyst"></option>
+        </datalist>
+
+        <button>Sign-Up/Login</button>
+        <button>Clear Form</button>
+    </form>
+
+    <p>&copy; ChiPi Technologies. All rights reserved.</p>
+
+</body>
+
+</html>
