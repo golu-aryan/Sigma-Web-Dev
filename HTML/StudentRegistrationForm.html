@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstName">First Name : </label>
+            <input type="text" name="firstName" id="firstName" required><br><br>
+
+            <label for="lastName">Last Name : </label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob" required><br><br>
+
+            <label>Gender : </label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="email">Email : </label><br>
+            <input type="email" id="email" name="email" placeholder="xyz@gmail.com" required><br><br>
+
+            <label for="phone">Phone Number : </label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+
+            <label for="address">Address : </label><br>
+            <textarea name="address" id="address" rows="4" cols="30" required></textarea><br><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="course">Course : </label>
+            <select name="corse" id="course" required>
+                <option value="">Select Course</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+            </select><br><br>
+
+            <label for="year">Year of Study : </label>
+            <select name="year" id="year" required>
+                <option value="">Select Year : </option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th year</option>
+            </select>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Login Information</legend>
+
+            <label for="username">UserName : </label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password" required><br><br>
+
+            <label for="confirmPassword">Confirm Password : </label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        </fieldset>
+
+        <input type="submit" value="Registration">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
