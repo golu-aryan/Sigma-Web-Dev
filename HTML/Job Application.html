@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipi Technologies - Job Application Form</title>
+</head>
+
+<body>
+    <h1>ChiPi Technologies - Job Application Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>Applicant Details</legend>
+
+            <label for="fullname">Full Name : </label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email : </label><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+
+            <label for="phone">Phone : </label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required><br><br>
+
+            <label for="position">Position Applied For : </label><br>
+            <select name="position" id="position" required>
+                <option value="">---Select Position---</option>
+                <option value="web-developer">Web Developer</option>
+                <option value="java-developer">Java Developer</option>
+                <option value="frontend-developer">Frontend Developer</option>
+                <option value="backend-developer">Backend Developer</option>
+                <option value="ui-ux-designer">UI/UX Designer</option>
+            </select><br><br>
+
+            <label for="resume">Upload Resume : </label><br>
+            <input type="file" id="resume" name="resume"><br><br>
+
+            <label>Gender : </label><br><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+
+
+            <label>Skills : </label>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="checkbox" id="js" name="skills" value="JavaScript">
+            <label for="js">JavaScript</label><br>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" id="java" name="skills" value="JAVA">
+            <label for="java">Java</label>
+
+
+            <label for="message">Additional Information : </label><br><br>
+            <textarea name="message" id="message" rows="4" cols="40"
+                placeholder="write Something about yourself"></textarea><br><br>
+
+
+            <input type="submit" value="Submit Application">
+            <input type="reset" value="Reset Form">
+        </fieldset>
+    </form>
+</body>
+
+</html>
